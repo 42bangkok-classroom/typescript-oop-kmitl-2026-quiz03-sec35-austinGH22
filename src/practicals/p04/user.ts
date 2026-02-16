@@ -22,6 +22,7 @@ export class User {
     }
 
     public login(password: string): boolean {
+        User.LOGIN_ATTEMPTS = User.LOGIN_ATTEMPTS + 1;
         if (this.validatePassword(password)) {
             return true;
         } else {
@@ -30,7 +31,6 @@ export class User {
     }
 
     public getLoginAttempts(): number {
-        User.LOGIN_ATTEMPTS = User.LOGIN_ATTEMPTS + 1;
         return User.LOGIN_ATTEMPTS;
     }
 }
