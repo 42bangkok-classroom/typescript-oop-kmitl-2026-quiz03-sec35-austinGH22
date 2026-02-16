@@ -8,10 +8,10 @@ export class Playstation extends Product {
     }
     
     public getProfile(): string {
-        return this.name + "(Gen"+this.generation+")";
+        return this.name + "(Gen " + this.generation + ")";
     }
     public getDiscountPrice(): number {
       let discount = (this.price * Product.DISCOUNT_PERCENT) / 100;
-      return this.price - discount;
+        return this.price - discount;
     }
 }
