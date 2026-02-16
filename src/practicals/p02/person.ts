@@ -1,7 +1,7 @@
 export class Person {
     private age:number = 0
     public firstname:string = ""
-    public lastname:String = ""
+    public lastname:string = ""
     public static COUNTRY:string = "Thailand"
 
     constructor(){
