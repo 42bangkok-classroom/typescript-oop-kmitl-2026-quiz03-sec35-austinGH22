@@ -1,5 +1,5 @@
 export class Product {
-    public readonly name: String ;
+    public readonly name: string ;
     protected price: number
     public static readonly DISCOUNT_PERCENT: number = 10;
     
