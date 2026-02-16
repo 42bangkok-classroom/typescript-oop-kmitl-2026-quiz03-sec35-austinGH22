@@ -7,15 +7,15 @@ export class Person {
     constructor(){
     }
 
-    setAge(age:number){
-        this.age = age
+    setAge(age:number):number{
+        return this.age = age
     }
 
-    getAge(){
+    getAge():number{
         return this.age 
     }
 
-    getFullName(){
+    getFullName():string{
         return this.firstname + " " + this.lastname
     }
 }
